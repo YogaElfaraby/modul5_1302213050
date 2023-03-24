@@ -10,6 +10,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Penjumlahan.JumlahTigaAngka<long>(12, 34, 56);
+        }
+
+
+        public class Penjumlahan
+        {
+            public static void JumlahTigaAngka<T>(T a, T b, T c)
+            {
+                Console.WriteLine((dynamic)a + (dynamic)b + (dynamic)c);
+
+            }
         }
     }
 }
